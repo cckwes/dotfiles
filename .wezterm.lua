@@ -16,6 +16,8 @@ config.hide_tab_bar_if_only_one_tab = true
 config.font_size = 11.0
 config.line_height = 1.3
 
+config.audible_bell = "Disabled"
+
 -- For example, changing the color scheme:
 config.color_scheme = "Dracula"
 
