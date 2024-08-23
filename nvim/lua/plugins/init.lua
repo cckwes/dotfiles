@@ -8,14 +8,14 @@ return {
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "catppuccin-mocha",
+      colorscheme = "kanagawa",
     },
   },
 
   {
     "folke/which-key.nvim",
     opts = {
-      defaults = {
+      specs = {
         ["<leader>ca"] = { desc = "Code action" },
       },
     },

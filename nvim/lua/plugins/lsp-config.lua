@@ -6,7 +6,6 @@ return {
         "lua-language-server",
         "typescript-language-server",
         "gopls",
-        "golangci-lint-langserver",
         "rust-analyzer",
       },
     },
