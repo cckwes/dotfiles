@@ -6,3 +6,5 @@ vim.keymap.set("i", "kk", "<Esc>", { silent = true })
 
 vim.keymap.set("i", ",,", "<Esc>A,", { silent = true })
 vim.keymap.set("i", ";;", "<Esc>A;", { silent = true })
+
+vim.keymap.set("n", "<leader>bA", ":%bd<CR>", { silent = true, desc = "Close all buffers" })
