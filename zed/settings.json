@@ -17,9 +17,72 @@
   "buffer_font_family": "JetBrainsMono Nerd Font",
   "relative_line_numbers": true,
   "use_autoclose": true,
+  "formatter": "language_server",
+  "format_on_safe": "on",
   "theme": {
     "mode": "system",
     "light": "One Light",
     "dark": "Catppuccin Mocha - No Italics"
+  },
+  "languages": {
+    "Typescript": {
+      "formatter": "prettier",
+      "code_actions_on_format": {
+        "source.fixAll": true,
+        "source.fixAll.eslint": true
+      },
+      "language_servers": ["typescript-language-server", "!vtsls"],
+      "format_on_save": {
+        "external": {
+          "command": "prettier",
+          "arguments": ["--stdin-filepath", "{buffer_path}"]
+        }
+      }
+    },
+    "TSX": {
+      "formatter": "prettier",
+      "code_actions_on_format": {
+        "source.fixAll": true,
+        "source.fixAll.eslint": true
+      },
+      "language_servers": ["deno", "tailwindcss-language-server", "!vtsls"],
+      "format_on_save": {
+        "external": {
+          "command": "prettier",
+          "arguments": ["--stdin-filepath", "{buffer_path}"]
+        }
+      }
+    }
+  },
+  "lsp": {
+    "rust-analyzer": {
+      "initialization_options": {
+        "checkOnSave": {
+          "command": "clippy"
+        }
+      }
+    },
+    "eslint": {
+      "enabled": true,
+      "autoFixOnSave": true,
+      "autoFixOnFormat": true,
+      "autoFixOnFormatDelay": 200,
+      "initialization_options": {
+        "checkOnSave": {
+          "command": "eslint"
+        }
+      },
+      "probe": [
+        "javascript",
+        "javascriptreact",
+        "typescript",
+        "typescriptreact",
+        "html",
+        "vue",
+        "markdown",
+        "svelte"
+      ],
+      "validate": ["javascript", "typescript", "javascriptreact", "svelte"]
+    }
   }
 }
