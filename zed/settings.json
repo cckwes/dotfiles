@@ -17,7 +17,11 @@
   "buffer_font_family": "JetBrainsMono Nerd Font",
   "relative_line_numbers": true,
   "use_autoclose": true,
-  "formatter": "language_server",
+  "formatter": {
+    "code_actions": {
+      "source.fixAll.eslint": true
+    }
+  },
   "format_on_safe": "on",
   "theme": {
     "mode": "system",
@@ -50,6 +54,13 @@
         "external": {
           "command": "prettier",
           "arguments": ["--stdin-filepath", "{buffer_path}"]
+        }
+      }
+    },
+    "Rust": {
+      "format_on_save": {
+        "external": {
+          "command": "cargo clippy --fix"
         }
       }
     }
