@@ -7,12 +7,19 @@
 // custom settings, run the `open default settings` command
 // from the command palette or from `Zed` application menu.
 {
+  "assistant": {
+    "default_model": {
+      "provider": "anthropic",
+      "model": "claude-3-5-sonnet-20240620"
+    },
+    "version": "2"
+  },
   "features": {
     "inline_completion_provider": "none"
   },
   "vim_mode": true,
-  "ui_font_size": 15,
-  "buffer_font_size": 13,
+  "ui_font_size": 14,
+  "buffer_font_size": 12,
   "buffer_line_height": "comfortable",
   "buffer_font_family": "JetBrainsMono Nerd Font",
   "relative_line_numbers": true,
@@ -22,7 +29,7 @@
   "theme": {
     "mode": "system",
     "light": "One Light",
-    "dark": "Catppuccin Mocha - No Italics"
+    "dark": "Catppuccin Mocha"
   },
   "languages": {
     "Typescript": {
@@ -31,11 +38,17 @@
         "source.fixAll": true,
         "source.fixAll.eslint": true
       },
-      "language_servers": ["typescript-language-server", "!vtsls"],
+      "language_servers": [
+        "typescript-language-server",
+        "!vtsls"
+      ],
       "format_on_save": {
         "external": {
           "command": "prettier",
-          "arguments": ["--stdin-filepath", "{buffer_path}"]
+          "arguments": [
+            "--stdin-filepath",
+            "{buffer_path}"
+          ]
         }
       }
     },
@@ -45,11 +58,18 @@
         "source.fixAll": true,
         "source.fixAll.eslint": true
       },
-      "language_servers": ["deno", "tailwindcss-language-server", "!vtsls"],
+      "language_servers": [
+        "deno",
+        "tailwindcss-language-server",
+        "!vtsls"
+      ],
       "format_on_save": {
         "external": {
           "command": "prettier",
-          "arguments": ["--stdin-filepath", "{buffer_path}"]
+          "arguments": [
+            "--stdin-filepath",
+            "{buffer_path}"
+          ]
         }
       }
     }
@@ -82,7 +102,12 @@
         "markdown",
         "svelte"
       ],
-      "validate": ["javascript", "typescript", "javascriptreact", "svelte"]
+      "validate": [
+        "javascript",
+        "typescript",
+        "javascriptreact",
+        "svelte"
+      ]
     }
   }
 }
