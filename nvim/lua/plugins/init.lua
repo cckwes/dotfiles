@@ -8,7 +8,7 @@ return {
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "kanagawa",
+      colorscheme = "catppuccin-mocha",
     },
   },
 
@@ -21,34 +21,34 @@ return {
     },
   },
 
-  {
-    "nvim-telescope/telescope.nvim",
-    keys = {
-      {
-        "<C-p>",
-        function()
-          require("telescope.builtin").find_files()
-        end,
-        desc = "Find Files",
-      },
-      {
-        "<C-f>",
-        function()
-          require("telescope.builtin").live_grep()
-        end,
-        desc = "Live Grep",
-      },
-    },
-    -- change some options
-    opts = {
-      defaults = {
-        layout_strategy = "horizontal",
-        layout_config = { prompt_position = "top" },
-        sorting_strategy = "ascending",
-        winblend = 0,
-      },
-    },
-  },
+  -- {
+  --   "nvim-telescope/telescope.nvim",
+  --   keys = {
+  --     {
+  --       "<C-p>",
+  --       function()
+  --         require("telescope.builtin").find_files()
+  --       end,
+  --       desc = "Find Files",
+  --     },
+  --     {
+  --       "<C-f>",
+  --       function()
+  --         require("telescope.builtin").live_grep()
+  --       end,
+  --       desc = "Live Grep",
+  --     },
+  --   },
+  --   -- change some options
+  --   opts = {
+  --     defaults = {
+  --       layout_strategy = "horizontal",
+  --       layout_config = { prompt_position = "top" },
+  --       sorting_strategy = "ascending",
+  --       winblend = 0,
+  --     },
+  --   },
+  -- },
 
   -- use <Tab> for selection
   {
