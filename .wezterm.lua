@@ -13,12 +13,12 @@ config.keys = {
 config.hide_tab_bar_if_only_one_tab = true
 
 -- This is where you actually apply your config choices
-config.font_size = 12.0
-config.line_height = 1.4
--- config.font = wezterm.font("SauceCodePro Nerd Font Mono", { weight = "Regular" })
+config.font_size = 11.0
+config.line_height = 1.3
+-- config.font = wezterm.font("SauceCodePro Nerd Font Mono", { weight = "Bold" })
 -- config.font = wezterm.font("MonaspiceAr Nerd Font", { weight = "Medium" })
--- config.font = wezterm.font("FiraMono Nerd Font Mono", { weight = "Regular" })
-config.font = wezterm.font("JetBrainsMono Nerd Font", { weight = "Medium" })
+-- config.font = wezterm.font("FiraMono Nerd Font Mono", { weight = "Medium" })
+config.font = wezterm.font("JetBrainsMono Nerd Font", { weight = "Bold" })
 
 config.audible_bell = "Disabled"
 config.window_padding = {

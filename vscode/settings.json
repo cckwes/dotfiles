@@ -1,0 +1,106 @@
+{
+  "workbench.colorTheme": "Catppuccin Mocha",
+  "editor.fontFamily": "JetBrainsMono Nerd Font",
+  "editor.fontSize": 11,
+  "editor.lineHeight": 20,
+  "editor.minimap.enabled": false,
+  "editor.fontLigatures": true,
+  "editor.formatOnSave": true,
+  "breadcrumbs.enabled": true,
+  "editor.wordWrap": "on",
+  "editor.lineNumbers": "relative",
+  "vim.insertModeKeyBindings": [
+    {
+      "before": ["j", "j"],
+      "after": ["<Esc>"]
+    },
+    {
+      "before": ["k", "k"],
+      "after": ["<Esc>"]
+    },
+    {
+      "before": [",", ","],
+      "after": ["<Esc>", "A", ",", "<Esc>", "a"]
+    },
+    {
+      "before": [";", ";"],
+      "after": ["<Esc>", "A", ";", "<Esc>", "a"]
+    }
+  ],
+  "vim.leader": " ",
+  "vim.useSystemClipboard": true,
+  "vim.normalModeKeyBindings": [
+    {
+      "before": ["<leader>", "e"],
+      "commands": ["workbench.action.toggleSidebarVisibility"]
+    },
+    {
+      "before": ["<leader>", "s", "s"],
+      "commands": ["workbench.action.gotoSymbol"]
+    },
+    {
+      "before": ["<leader>", "f", "f"],
+      "commands": ["workbench.action.quickOpen"]
+    },
+    {
+      "before": ["K"],
+      "commands": ["editor.action.showHover"]
+    },
+    {
+      "before": ["g", "r"],
+      "commands": ["editor.action.referenceSearch.trigger"]
+    }
+  ],
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": ["<C-h>"],
+      "commands": ["workbench.action.focusLeftGroup"]
+    },
+    {
+      "before": ["<C-j>"],
+      "commands": ["workbench.action.focusBelowGroup"]
+    },
+    {
+      "before": ["<C-k>"],
+      "commands": ["workbench.action.focusAboveGroup"]
+    },
+    {
+      "before": ["<C-l>"],
+      "commands": ["workbench.action.focusRightGroup"]
+    },
+    {
+      "before": ["[", "m"],
+      "commands": ["editor.action.goToPreviousSymbol"]
+    },
+    {
+      "before": ["]", "m"],
+      "commands": ["editor.action.goToNextSymbol"]
+    },
+    {
+      "before": ["<leader>", "t", "f"],
+      "commands": ["testing.runCurrentFile"]
+    },
+    {
+      "before": ["<leader>", "t", "c"],
+      "commands": ["testing.runCurrentTest"]
+    },
+    {
+      "before": ["<leader>", "t", "a"],
+      "commands": ["testing.runAll"]
+    }
+  ],
+  "go.lintTool": "golangci-lint",
+  "go.lintFlags": [
+    "--config=.golangci.yml" // Ensure it points to your config file
+  ],
+  "go.lintOnSave": "package", // Lint the package on save
+  "go.lintOnFly": false,
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "diffEditor.experimental.showMoves": true,
+  "diffEditor.renderSideBySide": true // Optional: Lint as you type
+}
