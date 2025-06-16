@@ -1,7 +1,7 @@
 {
   "workbench.colorTheme": "Catppuccin Mocha",
   "editor.fontFamily": "JetBrainsMono Nerd Font",
-  "editor.fontSize": 11,
+  "editor.fontSize": 12,
   "editor.lineHeight": 20,
   "editor.minimap.enabled": false,
   "editor.fontLigatures": true,
@@ -102,5 +102,6 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "diffEditor.experimental.showMoves": true,
-  "diffEditor.renderSideBySide": true // Optional: Lint as you type
+  "diffEditor.renderSideBySide": true,
+  "editor.accessibilitySupport": "off" // Optional: Lint as you type
 }
