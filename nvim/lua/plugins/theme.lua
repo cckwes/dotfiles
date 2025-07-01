@@ -20,7 +20,22 @@ return {
     priority = 1000,
   },
   {
+    "shaunsingh/nord.nvim",
+    name = "nord",
+    priority = 1000,
+  },
+  {
     "navarasu/onedark.nvim",
+    priority = 1000,
+  },
+  {
+    "bluz71/vim-moonfly-colors",
+    name = "moonfly",
+    priority = 1000,
+  },
+  {
+    "tiagovla/tokyodark.nvim",
+    name = "tokyodark",
     priority = 1000,
   },
 }
