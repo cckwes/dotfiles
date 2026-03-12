@@ -103,5 +103,10 @@
   },
   "diffEditor.experimental.showMoves": true,
   "diffEditor.renderSideBySide": true,
-  "editor.accessibilitySupport": "off" // Optional: Lint as you type
+  "editor.accessibilitySupport": "off",
+  "remote.defaultExtensionsIfInstalledLocally": [
+    "GitHub.copilot",
+    "GitHub.copilot-chat",
+    "GitHub.vscode-pull-request-github"
+  ] // Optional: Lint as you type
 }
