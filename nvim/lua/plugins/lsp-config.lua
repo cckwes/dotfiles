@@ -5,8 +5,8 @@ return {
       ensure_installed = {
         "lua-language-server",
         "typescript-language-server",
-        "gopls",
-        "rust-analyzer",
+        -- "gopls",
+        -- "rust-analyzer",
       },
     },
   },
